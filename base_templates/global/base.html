@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+{% include 'global/parciais/head.html' %}
+<title>{% block tituloPagina %}{% endblock tituloPagina %}Agenda-Lucas</title>
+</head>
+
+<body>
+     {% include 'global/parciais/nav.html' %}
+
+    <main>       
+        {% block conteudo %}
+        
+
+        {% endblock conteudo %}
+    </main>
+
+    {% include 'global/parciais/footer.html' %}
+</body>
+
+</html>
